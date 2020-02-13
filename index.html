@@ -1,1 +1,50 @@
+<!DOCTYPE html>
+<html lang="da">
 
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bistro Babushka</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Menu</h1>
+    <nav>
+        <button class="filter" data-kategori="alle">Alle</button>
+        <button class="filter" data-kategori="forretter">Forretter</button>
+        <button class="filter" data-kategori="hovedretter">Hovedretter</button>
+        <button class="filter" data-kategori="desserter">Desserter</button>
+        <button class="filter" data-kategori="sideorders">Sideorders</button>
+        <button class="filter" data-kategori="drikkevarer">Drikkevarer</button>
+
+    </nav>
+
+    <section id="data-container"></section>
+    <template>
+        <article>
+            <h3></h3>
+            <img src="" alt="">
+            <p></p>
+            <p></p>
+            <p></p>
+        </article>
+    </template>
+
+    <section id="detail" class="hide">
+        <button id="detail_close">X</button>
+        <article id="person_detail">
+            <h1>Navn</h1>
+            <img src="" alt="">
+            <p></p>
+            <p></p>
+            <p></p>
+        </article>
+    </section>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
