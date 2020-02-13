@@ -91,30 +91,30 @@ function showDetail(ret) {
 
 // SCRIPT til SEPARAT VISNING AF SINGLE VIEW
 
-const detailSeparate = document.querySelector("#detail_separate");
-
-const urlParams = new URLSearchParams(window.location.search);
-const id = urlParams.get("id");
-
-function visPersonerSeparate() {
-    console.log("visPersonerSeparate");
-    detailSeparate.querySelector("button").addEventListener("click", () => {
-        history.back;
-    });
-
-
-    menuData.feed.entry.forEach(ret => {
-        if (ret.gsx$id.$t == id) {
-            console.log(ret);
-            console.log(ret.gsx$navn.$t);
-            detailSeparate.querySelector("h1").textContent = ret.gsx$navn.$t;
-
-
-
-
-        }
-
-
-    })
-
-}
+//const detailSeparate = document.querySelector("#detail_separate");
+//
+//const urlParams = new URLSearchParams(window.location.search);
+//const id = urlParams.get("id");
+//
+//function visPersonerSeparate() {
+//    console.log("visPersonerSeparate");
+//    detailSeparate.querySelector("button").addEventListener("click", () => {
+//        history.back;
+//    });
+//
+//
+//    menuData.feed.entry.forEach(ret => {
+//        if (ret.gsx$id.$t == id) {
+//            console.log(ret);
+//            console.log(ret.gsx$navn.$t);
+//            detailSeparate.querySelector("h1").textContent = ret.gsx$navn.$t;
+//
+//
+//
+//
+//        }
+//
+//
+//    })
+//
+//}
