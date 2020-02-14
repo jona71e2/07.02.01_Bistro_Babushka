@@ -99,10 +99,8 @@
 
 
         function visRetter() {
-
-
             console.log("visRetter");
-            detail.querySelector("button").addEventListener("click", () => {
+            document.querySelector("button").addEventListener("click", () => {
                 history.back;
             });
 
@@ -112,6 +110,10 @@
                     console.log(ret);
                     console.log(ret.gsx$navn.$t);
                     detail.querySelector("h1").textContent = ret.gsx$navn.$t;
+                    detail.querySelector("img").src = `imgs/large/${ret.gsx$billede.$t}.jpg`;
+                    detail.querySelector("img").alt = `imgs/large/${ret.gsx$billede.$t}.jpg`;
+                    detail.querySelector("p:nth-child(3)").textContent += `Om denne ret: ${ret.gsx$lang.$t}`;
+                    detail.querySelector("p:nth-child(4)").textContent += `Pris: ${ret.gsx$pris.$t},-`;
 
 
 
